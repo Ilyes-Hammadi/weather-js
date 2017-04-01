@@ -16,6 +16,7 @@ $ webpack -p
 
 In the second terminal run this command, then open `localhost:8000`
 ```shell
+$ cd dist
 $ python -m SimpleHTTPServer
 ```
 
