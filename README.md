@@ -3,7 +3,7 @@
 
 ## Install the project
 ```shell
-$ git clone 
+$ git clone https://github.com/Ilyes-Hammadi/weather-js
 $ npm install
 $ npm install -g webpack
 ```
