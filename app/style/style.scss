@@ -1,1 +1,15 @@
 // TODO: Roght your SASS here
+$title: normal 100px 'Open Sans', sans-serif;
+$color: #2ecc71;
+$color-font: snow;
+
+body{
+  background-color: $color;
+}
+#tmp{
+  color: $color-font;
+  position: absolute;
+  top: 40vh;
+  left : 40vw;
+  font : $title;
+}
