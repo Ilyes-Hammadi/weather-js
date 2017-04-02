@@ -15,7 +15,7 @@ if (navigator.geolocation) {
 
 
 function getWeather(position) {
-    console.log(position)
+
 
     // The lat and lon that we get from the browser
     const lat = position.coords.latitude;
@@ -25,8 +25,11 @@ function getWeather(position) {
 	// Get the data from the server
 	$.get('http://api.openweathermap.org/data/2.5/weather?lat=' + lat +'&lon=' + lon +'&appid=' + KEY)
 		.done(function (res) {
-            // TODO: Parse the response here
-			console.log(res)
+
+				/* Display the local temps */
+				var temp = res.main.temp-273.15;
+				$("#tmp").text(temp+"°")
+
 
 		}).fail(function (err) {
             // This will fire in case of an error
